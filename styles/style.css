@@ -1,0 +1,196 @@
+
+
+:root{
+    --dark-blue-300: #0A3871;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --gray: #D8DFE8;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --white: #FFFFFF;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--light-blue-200);
+    color: var(--dark-blue-300);
+}
+.head{
+    padding: 1% 70% 0% 1%;
+    gap: 70%;
+}
+.head__a{
+    padding: 0% 70% 0% 0%;
+}
+.principal{
+    display: flex;
+    justify-content: space-between;
+}
+.principal__conteudo__texto{
+    padding: 5% 30%;
+    width: 680px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+    resize: none;
+    color: var(--dark-blue-300);
+    border: 0.2rem;
+    background: none;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    outline: none;
+}
+.principal__conteudo__regra{
+    padding: 50% 0% 0% 30%;
+    display: flex;
+    align-items: center;
+    width: Hug (252px);
+    height: Hug (18px);
+    top: 851px;
+    left: 240px;
+    gap: 8px;
+    color: var(--gray-400);
+}
+.principal__botoes{
+    padding: 0% 0% 0% 30%;
+    display: flex;
+    width: Fixed (680px);
+    height: Hug (67px);
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+}
+.principal__botoes__c{
+    padding: 24px;
+    border-radius: 24px;
+    color: var(--white);
+    border: 1px solid var(--dark-blue-300);
+    background-color: var(--dark-blue-300);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3px;
+    text-align: center;
+    justify-content: center;
+    width: 280px;
+    height: 19px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.principal__botoes__d{
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    background-color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3px;
+    text-align: center;
+    justify-content: center;
+    width: 280px;
+    height: 19px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.retangulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 2rem; 
+    box-shadow: 1.2rem 1.8rem 3.5rem #AAB2D5;
+}
+.retangulo__resultado{
+    width: 400px;
+    height: 600px;
+    top: 60px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    resize: none;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: default;
+}
+.retangulo__resultado__img{
+    width: 400px;
+    height: 600px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+/* .retangulo__resultado:not(:placeholder-shown){
+    background-image: url(../assets/Boneco_texto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.retangulo__resultado__botao{
+    margin-top: 5px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    background-color: var(--gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3px;
+    text-align: center;
+    justify-content: center;
+    width: 280px;
+    height: 19px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.invisible{
+    display: none;
+}
+
+@media (max-width : 1200px){
+    .head{
+        padding: 5% 50% 0% 5%;
+    }
+    .principal{
+        display: flex;
+        padding: 0% 0% 0% 15%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .principal__conteudo{
+        padding: 0% 0% 5% 0%;
+    }
+    .principal__conteudo__texto{
+        padding: 0% 5%; 
+    }
+    .principal__conteudo__regra{
+        padding: 40% 0% 0% 5%;
+    }
+    .principal__botoes{
+        padding: 0% 0% 0% 5%;
+    }
+    .retangulo{
+        padding: 0% 0% 10% 5%;
+        width: 600px;
+        gap: 0%;
+    }    
+}

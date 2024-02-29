@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador com D</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="head">                
+        <section class="head__a">
+        <img src="./assets/Header.png" alt="A do alura">
+    </section>
+    </header>
+    <main class="principal">
+        <section class="principal__conteudo">
+            <textarea class="principal__conteudo__texto" id="input__text" placeholder="Digite seu texto"></textarea>
+            <p class="principal__conteudo__regra"> <img src="./assets/Group.png" alt="Circulo com exclamação"> Apenas letras minúsculas e sem acento.</p>
+            <div class="principal__botoes">
+                <button onclick="btnResult()" class="principal__botoes__c">Criptografar</button>
+                <button onclick="btnDecrypt()" class="principal__botoes__d">Descriptografar</button>
+        </div>
+        </section>
+        <section class="retangulo">
+            <textarea class="retangulo__resultado" id="outinput__text" readonly></textarea>
+            <button onclick="copy()" class="retangulo__resultado__botao invisible">Copiar</button>
+            <img class="retangulo__resultado__img" src="./assets/Boneco_texto.png">
+    </section> 
+    </main>
+    <script src="interation/script.js"></script>
+</body>
+</html>
