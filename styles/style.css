@@ -130,6 +130,7 @@ body{
     cursor: default;
 }
 .retangulo__resultado__img{
+    padding: 0%;
     width: 400px;
     height: 600px;
     top: 60px;
@@ -140,11 +141,6 @@ body{
     gap: 3%;
 }
 
-/* .retangulo__resultado:not(:placeholder-shown){
-    background-image: url(../assets/Boneco_texto.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 .retangulo__resultado__botao{
     margin-top: 5px;
     padding: 24px;
@@ -166,13 +162,16 @@ body{
     display: none;
 }
 
-@media (max-width : 1200px){
+@media (max-width : 1000px){
     .head{
-        padding: 5% 50% 0% 5%;
+        padding: 5% 50% 0% 1%;
     }
+    .head__a{
+        padding: 0%;
+    }    
     .principal{
         display: flex;
-        padding: 0% 0% 0% 15%;
+        padding: 0% 0% 0% 0%;
         flex-direction: column;
         justify-content: center;
     }
@@ -180,17 +179,40 @@ body{
         padding: 0% 0% 5% 0%;
     }
     .principal__conteudo__texto{
-        padding: 0% 5%; 
+        padding: 10% 1% 0% 0%;
+        width: 343px;
+        height: 48px;
+        top: 152px;
+        left: 16px;
+
     }
     .principal__conteudo__regra{
-        padding: 40% 0% 0% 5%;
+        padding: 40% 0% 0% 0%;
     }
     .principal__botoes{
         padding: 0% 0% 0% 5%;
+        flex-direction: column;
     }
     .retangulo{
-        padding: 0% 0% 10% 5%;
-        width: 600px;
+        padding: 0% 0% 10% 0%;
+        width: Fixed (327px);
+        height: Hug (595px);
+        border-radius: 32px;
+        gap: 0px;
+        
+    }
+    .retangulo__resultado{
+        width: Fixed (359px);
+        height: Hug (595px);
+
+    }
+    .retangulo__resultado__img{
+        width: 359px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 0%;
     }    
 }

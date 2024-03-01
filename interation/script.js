@@ -1,11 +1,11 @@
 let textInput = document.getElementById("input__text");
 let outInput = document.getElementById("outinput__text");
-// let image = document.getElementsByClassName("retangulo__resultado invisible");
+
 
 function btnResult(){
     let bntCopy = document.querySelector(".retangulo__resultado__botao");
     bntCopy.classList.remove("invisible");
-    let image = document.querySelector(".retangulo__resultado__img")
+    let image = document.querySelector(".retangulo__resultado__img");
     image.classList.add("invisible");
     const textEncrypt = encrypt(textInput.value);
     outInput.value = textEncrypt;
@@ -31,6 +31,10 @@ function btnDecrypt(){
     const textDecrypt = decrypt(textInput.value);
     outInput.value = textDecrypt;
     textInput.value = "";
+    let bntCopy = document.querySelector(".retangulo__resultado__botao");
+    bntCopy.classList.remove("invisible");
+    let image = document.querySelector(".retangulo__resultado__img");
+    image.classList.add("invisible");
 }
 
 function decrypt(parametroDecrypt){
@@ -50,7 +54,9 @@ function decrypt(parametroDecrypt){
 function copy(){
     outInput.select();
     navigator.clipboard.writeText(outInput.value);
-    alert("Texto copiado.");
     outInput.value = "";
-
+    let image = document.querySelector(".retangulo__resultado__img");
+    image.classList.remove("invisible");
+    let bntCopy = document.querySelector(".retangulo__resultado__botao");
+    bntCopy.classList.add("invisible");
 }
