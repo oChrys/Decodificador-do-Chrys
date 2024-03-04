@@ -1,7 +1,6 @@
 let textInput = document.getElementById("input__text");
 let outInput = document.getElementById("outinput__text");
 
-
 function btnResult(){
     let bntCopy = document.querySelector(".retangulo__resultado__botao");
     bntCopy.classList.remove("invisible");
@@ -10,7 +9,6 @@ function btnResult(){
     const textEncrypt = encrypt(textInput.value);
     outInput.value = textEncrypt;
     textInput.value = "";
-    
 }
 
 function encrypt(parametroEncrypt){
